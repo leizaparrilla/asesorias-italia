@@ -1,0 +1,25 @@
+.menu{
+    background-color: rgb(207, 173, 79);
+    padding:  10px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.menu ul li{
+display: inline;
+margin-right: 10px;
+}
+.menu ul li a{
+    color: black;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo h1{
+    color: blueviolet;
+}

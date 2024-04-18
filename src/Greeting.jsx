@@ -1,3 +1,4 @@
+import './greeting.css'
 
 const Titulo = ({greeting}) => {
     return (

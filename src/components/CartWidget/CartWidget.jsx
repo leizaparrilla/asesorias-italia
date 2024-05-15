@@ -1,11 +1,9 @@
-import cart from './assets/cart.svg'
-
 const CartWidget = () => {
-    return(
-        <div>
-<img src={cart} alt="Cart-Widget" />
-0
-</div>
-    )
+    return (
+    <button type="button" className="btn bg-dark position-relative">
+        <i className="bi bi-cart" ></i>
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+        </button>
+    );
 }
-export default CartWidget
+export default CartWidget;

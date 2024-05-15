@@ -1,4 +1,5 @@
-import './greeting.css'
+/* eslint-disable react/prop-types */
+
 
 const Titulo = ({greeting}) => {
     return (

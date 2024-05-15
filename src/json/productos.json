@@ -1,0 +1,74 @@
+[{
+    "id": 1,
+    "imageUrl": "https://i.pinimg.com/564x/86/32/7c/86327cca86facf25cd7870c60aa114bc.jpg ",
+    "name": "Curso de Ciudadania Italiana",
+    "category": "ciudadania.italiana",
+    "description": "lorem",
+    "price": 20000,
+    "stock": 1
+    
+},
+{
+    "id": 2,
+    "imageUrl": " https://i.pinimg.com/564x/97/67/3a/97673a4238bd6fb6ddf6ef2eef4cb6d7.jpg",
+    "name": "MasterClass, Asesoria Ciudadania Italiana",
+    "category": "Asesorias",
+    "description":"lorem",
+    "price": 10000,
+    "stock": 2
+},
+{
+    
+    "id": 3,
+    "imageUrl": " https://i.pinimg.com/564x/bb/cc/22/bbcc22058721bb89acda7417e296a954.jpg",
+    "name": "Busqueda de Actas",
+    "category": "ciudadania.italiana",
+    "description": "lorem",
+    "price": 20000,
+    "stock": 12
+},
+{
+    "id": 4,
+    "imageUrl": " https://i.pinimg.com/564x/d5/a9/58/d5a958f2178da2ad4403aafa14b8d926.jpg",
+    "name": "Traduccion de Actas",
+    "category": "ciudadania.italiana",
+    "description": "lorem",
+    "price": 30000,
+    "stock": 12
+},
+{
+    "id": 5,
+    "imageUrl": " https://i.pinimg.com/564x/33/55/5a/33555aca6031f21a6540b8b367fbef48.jpg",
+    "name": "Asesoria Marketing y Redes Sociales",
+    "category": "Asesorias",
+    "description": "lorem",
+    "price": 15000,
+    "stock": 3
+},
+{
+    "id": 6,
+    "imageUrl": "https://i.pinimg.com/564x/e4/3a/08/e43a0837a420ae89c2f410519b875a53.jpg ",
+    "name": "Asesoria, Trabajos por el Mundo",
+    "category": "Asesorias",
+    "description": "lorem",
+    "price": 15000,
+    "stock": 3
+},
+{
+    "id": 7,
+    "imageUrl": "https://i.pinimg.com/564x/da/65/04/da6504bfe0c0ca362047bead71c40d64.jpg",
+    "name": "Curso Italiano inicial",
+    "category": "Idioma",
+    "description":"Aprende italiano desde A1 hasta B2",
+    "price": 10000,
+    "stock": 4
+},
+{
+    "id": 8,
+    "imageUrl": "https://i.pinimg.com/564x/d5/02/58/d502583f1b5ab5767f9536a83cb11ae1.jpg ",
+    "name": "Curso Italiano Para viajeros",
+    "category": "Idioma",
+    "description":"Todo lo que necesitas saber para iniciar tu ciudadania",
+    "price": 10000,
+    "stock": 2
+} ]

@@ -1,37 +1,50 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import arrayProductos from "../../json/productos.json";
 import Loading from "../Loading/Loading";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where, getFirestore, addDoc, } from "firebase/firestore";
+import arrayProductos from "../../json/productos.json"
 
-const fetchItems = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(arrayProductos)
-        }, 2000)
-    })
-};
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
-    const {categoryId} = useParams();
+    const { categoryId } = useParams();
+
 
     useEffect(() => {
-        const fetchData = async () => {
-            const data = await fetchItems();
-            setItems(categoryId ? data.filter(item => item.category == categoryId) : data);
-            setLoading(false);
-        };
-
-        fetchData();
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        const resultQuery = categoryId ? query(itemsCollection, where("category", "==", categoryId)) : itemsCollection;
+        getDocs(resultQuery).then(snapShot => {
+            if (snapShot.size > 0) {
+                setItems(snapShot.docs.map(item => ({ id: item.id, ...item.data() })));
+                setLoading(false);
+                console.log(items);
+            } else {
+                console.log("No existen Documentos!");
+                setItems([]);
+            }
+        });
     }, [categoryId]);
+
+
+
+    //los productos ya estan cargados
+    /*useEffect(() => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+
+        arrayProductos.forEach(producto =>{
+            addDoc(itemsCollection, producto)
+        } )
+console.log("productos cargados")
+},[]);*/
 
     return (
         <div className="container my-5">
             <div className="row">
-                <h1 className="text-center-my-3">todo lo que necesitas saber sobre ciudadania italiana</h1>
                 {
                     loading ? <Loading /> : <ItemList items={items} />
                 }

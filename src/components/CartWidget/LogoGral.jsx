@@ -1,4 +1,4 @@
-import logo from './assets/logo.svg'
+import {logo} from './assets/logo.svg'
 
 const LogoGral = () => {
     return(
@@ -8,3 +8,7 @@ const LogoGral = () => {
     )
 }
 export default LogoGral
+
+
+
+
